@@ -24,7 +24,7 @@ A collection of dotfiles and scripts for bootstrapping a MacOS development envir
     1. Install [VSCode](https://code.visualstudio.com/)
     1. Install [Sourcetree](https://www.sourcetreeapp.com/)
 1. Restart terminal
-1. Run `p10k` and install `Meslo Nerd Font`
+1. Run `p10k configure` and install `Meslo Nerd Font`
     1. Quit terminal when prompted
 
 ## Usage
