@@ -19,7 +19,8 @@ source ~/.bugsnag
 ###############################################################
 # asdf
 ###############################################################
-. /usr/local/opt/asdf/libexec/asdf.sh
+ASDF_SCRIPT_LOCATION="$(brew --prefix asdf)/libexec/asdf.sh"
+source ${ASDF_SCRIPT_LOCATION}
 
 ###############################################################
 # gcloud
@@ -36,11 +37,14 @@ export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$GOROOT
 
 ###############################################################
+# powerlevel10k
+###############################################################
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+POWERLVL10K_SCRIPT_LOCATION="$(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme"
+source ${POWERLVL10K_SCRIPT_LOCATION}
+
+###############################################################
 # rbenv
 ###############################################################
 eval "$(rbenv init -)"
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
-source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
