@@ -1,0 +1,113 @@
+#############################################################
+# general
+############################################################
+bump_dot_files () {
+  if [ -z "$1" ]
+    then
+      echo "Please provide a commit message"
+     return
+  fi
+  cd "${HOME}/repos/mikeewhite/dotfiles"
+  git add .
+  git commit -m "$1"
+  git push origin master
+  cd $cwd
+}
+
+###############################################################
+# iTerm
+###############################################################
+# Switches the current profile
+# Usage: iterm_profile <profile-name> (case-sensitive)
+iterm_profile() {
+  echo -e "\033]50;SetProfile=$1\a"
+}
+
+# Changes the title of the current tab
+iterm_title() {
+  echo -ne "\033]0;"$*"\007"
+}
+
+###############################################################
+# git
+###############################################################
+git-branch() {
+  if [ -z "$1" ]
+    then
+      echo "Please provide a branch name (note: this will be prefixed with 'mikeewhite/')"
+      return
+  fi
+  git checkout -b mikeewhite/$1 origin/master
+}
+
+###############################################################
+# github
+###############################################################
+github() {
+  if [ ! -d .git ] && ! git rev-parse --git-dir >/dev/null 2>&1; then
+    echo "ERROR: This isnt a git directory" && return false
+  fi
+  git_url=$(git config --get remote.origin.url)
+  if [[ $git_url == https://gitlab* ]]; then
+    url=${git_url%.git}
+  elif [[ $git_url == https://github* ]]; then
+    url=${git_url%.git}
+  elif [[ $git_url == git@gitlab* ]]; then
+    url=${git_url:4}
+    url=${url/\:/\/}
+    url="https://${url%.git}"
+  elif [[ $git_url == git@github* ]]; then
+    url=${git_url:4}
+    url=${url/\:/\/}
+    url="https://${url%.git}"
+  elif [[ $git_url == git://github* ]]; then
+    url=${git_url:4}
+    url=${url/\:/\/}
+    url="https://${url%.git}"
+  else
+    echo "ERROR: Remote origin is invalid" && return false
+  fi
+  open $url
+}
+
+###############################################################
+# grpc
+###############################################################
+# Starts a grpc-ui session (see https://github.com/fullstorydev/grpcui)
+# Usage: grpc <port>
+grpc () {
+  grpcui -plaintext localhost:$1
+}
+
+###############################################################
+# k8s
+###############################################################
+# Starts an interactive bash session on a container running on a k8s pod
+# Usage: k8s_bash <pod-name> <container-name>
+k8s_bash () {
+  if [ -z "$1" ]
+    then
+      echo "Please provide a pod name. Usage: k8s_bash <pod-name> <container-name>"
+      return
+  fi
+  if [ -z "$2" ]
+    then
+      echo "Please provide a container name. Usage: k8s_bash <pod-name> <container-name>"
+      return
+  fi
+  set -x
+  kubectl exec -it $1 --container=$2 -- /bin/bash
+}
+
+##############################################################
+# rabbitmq
+##############################################################
+# Taps an exchange using https://github.com/jandelgado/rabtap
+tap () {
+  if [ -z "$1" ]
+    then
+      echo "Please provide an exchange name, e.g. tap notifications"
+      return
+  fi
+  rabtap tap $1: --uri amqp://localhost:5672/
+}
