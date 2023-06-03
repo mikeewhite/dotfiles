@@ -77,3 +77,14 @@ brew install --cask spectacle
 echo -e "🛠️ ${GREEN} Starting Spectacle window manager${NC}"
 open -a Spectacle
 
+echo -e "🛠️ ${GREEN} Installing Mac App Store CLI (see https://github.com/mas-cli/mas)${NC}"
+brew install mas
+
+mas signin --dialog
+
+echo -e "🛠️ ${GREEN} Installing Trello (see https://trello.com/)${NC}"
+mas lucky trello
+
+echo -e "🛠️ ${GREEN} Installing Horo timer via Mac App store (see https://matthewpalmer.net/horo-free-timer-mac/)${NC}"
+mas lucky horo
+open -a Horo
