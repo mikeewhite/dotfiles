@@ -1,6 +1,13 @@
 # dotfiles
 
-A collection of dotfiles and scripts for bootstrapping a MacOS development environment.
+A collection of dotfiles and scripts for bootstrapping a MacOS development environment including the following tooling:
+* [oh-my-zsh](https://ohmyz.sh/) - zsh config manager
+* [powerlevel10k](https://github.com/romkatv/powerlevel10k) - zsh theme
+* [asdf](https://asdf-vm.com/) - version manager
+* [VSCode](https://code.visualstudio.com/) - IDE
+* [Sourcetree](https://www.sourcetreeapp.com/) - Git GUI
+* [Trello](https://trello.com/) - Kanban style list-making app
+* [Horo](https://matthewpalmer.net/horo-free-timer-mac/) - Timer app
 
 ## Pre-requisites
 1. Check `git` is installed/working
@@ -15,17 +22,10 @@ A collection of dotfiles and scripts for bootstrapping a MacOS development envir
 ## Setup
 1. Open iTerm2
 1. Clone this repo and `cd` into the repo root
-1. Run `./bootstrap.sh` which will:
-    1. Install [oh-my-zsh](https://ohmyz.sh/)
-    1. Install [powerlevel10k](https://github.com/romkatv/powerlevel10k) zsh theme
-    1. Install [asdf](https://asdf-vm.com/) version manager and associated plugins
-    1. Install tooling (such as Go, Java, and NodeJS) via `asdf` at the pinned versions specified in the `.tool-versions` file)
-    1. Symlink dotfiles in your home directory to the version controlled equivalents in this repo.
-    1. Install [VSCode](https://code.visualstudio.com/)
-    1. Install [Sourcetree](https://www.sourcetreeapp.com/)
+1. Run `./bootstrap.sh`
 1. Restart terminal
 1. Run `p10k configure` and install `Meslo Nerd Font`
     1. Quit terminal when prompted
-
-## Usage
-1. Run `bump_dot_files` to commit changes to dotfiles.
+1. Open VSCode:
+    1. Enable launching from the command line (https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line)
+    1. Sign in and enable settings sync.
