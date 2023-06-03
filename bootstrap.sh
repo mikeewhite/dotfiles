@@ -71,3 +71,9 @@ brew install --cask visual-studio-code
 
 echo -e "🛠️ ${GREEN} Installing sourcetree Git GUI (see https://www.sourcetreeapp.com/)${NC}"
 brew install --cask sourcetree
+
+echo -e "🛠️ ${GREEN} Installing Spectacle window manager (see https://www.spectacleapp.com/)${NC}"
+brew install --cask spectacle
+echo -e "🛠️ ${GREEN} Starting Spectacle window manager${NC}"
+open -a Spectacle
+
