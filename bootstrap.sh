@@ -69,6 +69,10 @@ asdf install
 echo -e "🛠️ ${GREEN} Installing VSCode IDE (see https://code.visualstudio.com/)${NC}"
 brew install --cask visual-studio-code
 
+echo -e "🛠️ ${GREEN} Installing FiraCode font (required for font ligatures in VSCode - see https://github.com/tonsky/FiraCode/wiki/Installing)${NC}"
+brew tap homebrew/cask-fonts
+brew install --cask font-fira-code
+
 echo -e "🛠️ ${GREEN} Installing sourcetree Git GUI (see https://www.sourcetreeapp.com/)${NC}"
 brew install --cask sourcetree
 
@@ -79,8 +83,6 @@ open -a Spectacle
 
 echo -e "🛠️ ${GREEN} Installing Mac App Store CLI (see https://github.com/mas-cli/mas)${NC}"
 brew install mas
-
-mas signin --dialog
 
 echo -e "🛠️ ${GREEN} Installing Trello (see https://trello.com/)${NC}"
 mas lucky trello
