@@ -6,6 +6,7 @@ A collection of dotfiles and scripts for bootstrapping a MacOS development envir
 * [asdf](https://asdf-vm.com/) - version manager
 * [VSCode](https://code.visualstudio.com/) - IDE
 * [Sourcetree](https://www.sourcetreeapp.com/) - Git GUI
+* [Spectacle](https://www.spectacleapp.com/) - Window manager
 * [Trello](https://trello.com/) - Kanban style list-making app
 * [Horo](https://matthewpalmer.net/horo-free-timer-mac/) - Timer app
 
