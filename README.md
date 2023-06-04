@@ -19,6 +19,7 @@ A collection of dotfiles and scripts for bootstrapping a MacOS development envir
     1. See https://brew.sh/
 1. Install [iTerm2](https://iterm2.com/)
     1. `brew install --cask iterm2`
+1. Sign into Mac App Store
 
 ## Setup
 1. Open iTerm2
