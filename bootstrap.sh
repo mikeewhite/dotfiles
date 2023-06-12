@@ -76,10 +76,10 @@ brew install --cask font-fira-code
 echo -e "🛠️ ${GREEN} Installing sourcetree Git GUI (see https://www.sourcetreeapp.com/)${NC}"
 brew install --cask sourcetree
 
-echo -e "🛠️ ${GREEN} Installing Spectacle window manager (see https://www.spectacleapp.com/)${NC}"
-brew install --cask spectacle
-echo -e "🛠️ ${GREEN} Starting Spectacle window manager${NC}"
-open -a Spectacle
+echo -e "🛠️ ${GREEN} Installing Rectangle window manager (see https://rectangleapp.com/)${NC}"
+brew install --cask rectangle
+echo -e "🛠️ ${GREEN} Starting Rectangle window manager${NC}"
+open -a Rectangle
 
 echo -e "🛠️ ${GREEN} Installing Mac App Store CLI (see https://github.com/mas-cli/mas)${NC}"
 brew install mas
