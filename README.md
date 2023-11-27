@@ -7,8 +7,6 @@ A collection of dotfiles and scripts for bootstrapping a MacOS development envir
 * [VSCode](https://code.visualstudio.com/) - IDE
 * [Sourcetree](https://www.sourcetreeapp.com/) - Git GUI
 * [Rectangle](https://rectangleapp.com/) - Window manager
-* [Trello](https://trello.com/) - Kanban style list-making app
-* [Horo](https://matthewpalmer.net/horo-free-timer-mac/) - Timer app
 
 ## Pre-requisites
 1. Check `git` is installed/working
@@ -19,7 +17,6 @@ A collection of dotfiles and scripts for bootstrapping a MacOS development envir
     1. See https://brew.sh/
 1. Install [iTerm2](https://iterm2.com/)
     1. `brew install --cask iterm2`
-1. Sign into Mac App Store
 
 ## Setup
 1. Open iTerm2

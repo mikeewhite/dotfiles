@@ -14,7 +14,7 @@ source $ZSH/oh-my-zsh.sh
 source ~/.aliases
 source ~/.functions
 source ~/.sensitive
-source ~/.bugsnag
+source ~/.90poe
 
 ###############################################################
 # asdf
@@ -30,11 +30,11 @@ export USE_GKE_GCLOUD_AUTH_PLUGIN=True
 ###############################################################
 # go
 ###############################################################
-export GOROOT="$HOME/.asdf/installs/golang/1.20.3/go"
-export GOPATH="$HOME/.asdf/installs/golang/1.20.3/packages"
-export GOPRIVATE=github.com/bugsnag
+export GOROOT="$HOME/.asdf/installs/golang/1.21.4/go"
+export GOPATH="$HOME/.asdf/installs/golang/1.21.4/packages"
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$GOROOT
+export GOPRIVATE=buf.build/gen/go
 
 ###############################################################
 # powerlevel10k
@@ -44,7 +44,3 @@ export PATH=$PATH:$GOROOT
 POWERLVL10K_SCRIPT_LOCATION="$(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme"
 source ${POWERLVL10K_SCRIPT_LOCATION}
 
-###############################################################
-# rbenv
-###############################################################
-eval "$(rbenv init -)"

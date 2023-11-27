@@ -56,11 +56,11 @@ if [ ! -f "${FILE}" ]; then
     echo "# Add any secrets or sensitive content here that should not be added to source control" > ${FILE}
 fi
 
-FILE="${HOME}/.bugsnag"
+FILE="${HOME}/.90poe"
 if [ ! -f "${FILE}" ]; then
     echo -e "🛠️ ${GREEN} Creating ${FILE}${NC}"
     touch ${FILE}
-    echo "# See https://github.com/mikeewhite/bugsnag-dotfiles" > ${FILE}
+    echo "# See https://github.com/mikeewhite/90poe-dotfiles" > ${FILE}
 fi
 
 echo -e "🛠️ ${GREEN} Installing tooling via asdf (${FILE})${NC}"
@@ -79,14 +79,3 @@ brew install --cask sourcetree
 echo -e "🛠️ ${GREEN} Installing Rectangle window manager (see https://rectangleapp.com/)${NC}"
 brew install --cask rectangle
 echo -e "🛠️ ${GREEN} Starting Rectangle window manager${NC}"
-open -a Rectangle
-
-echo -e "🛠️ ${GREEN} Installing Mac App Store CLI (see https://github.com/mas-cli/mas)${NC}"
-brew install mas
-
-echo -e "🛠️ ${GREEN} Installing Trello (see https://trello.com/)${NC}"
-mas lucky trello
-
-echo -e "🛠️ ${GREEN} Installing Horo timer via Mac App store (see https://matthewpalmer.net/horo-free-timer-mac/)${NC}"
-mas lucky horo
-open -a Horo
