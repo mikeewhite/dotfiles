@@ -7,6 +7,7 @@ A collection of dotfiles and scripts for bootstrapping a MacOS development envir
 * [VSCode](https://code.visualstudio.com/) - IDE
 * [Sourcetree](https://www.sourcetreeapp.com/) - Git GUI
 * [Rectangle](https://rectangleapp.com/) - Window manager
+* [OpenLens](https://github.com/lensapp/lens) - Kubernetes GUI
 
 ## Pre-requisites
 1. Check `git` is installed/working

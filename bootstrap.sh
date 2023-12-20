@@ -78,4 +78,7 @@ brew install --cask sourcetree
 
 echo -e "🛠️ ${GREEN} Installing Rectangle window manager (see https://rectangleapp.com/)${NC}"
 brew install --cask rectangle
-echo -e "🛠️ ${GREEN} Starting Rectangle window manager${NC}"
+
+echo -e "🛠️ ${GREEN} Installing OpenLens (see https://github.com/lensapp/lens)${NC}"
+brew install --cask openlens
+
