@@ -35,8 +35,8 @@ export USE_GKE_GCLOUD_AUTH_PLUGIN=True
 ###############################################################
 # go
 ###############################################################
-export GOROOT="$HOME/.asdf/installs/golang/1.21.4/go"
-export GOPATH="$HOME/.asdf/installs/golang/1.21.4/packages"
+export GOROOT="$HOME/.asdf/installs/golang/1.21.5/go"
+export GOPATH="$HOME/.asdf/installs/golang/1.21.5/packages"
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$GOROOT
 export GOPRIVATE=buf.build/gen/go
