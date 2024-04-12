@@ -33,6 +33,12 @@ source ${ASDF_SCRIPT_LOCATION}
 export USE_GKE_GCLOUD_AUTH_PLUGIN=True
 
 ###############################################################
+# github
+###############################################################
+# Use vim as the editor for the GitHub CLI
+export EDITOR=vim
+
+###############################################################
 # go
 ###############################################################
 export GOROOT="$HOME/.asdf/installs/golang/1.21.5/go"
