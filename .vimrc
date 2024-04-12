@@ -1,6 +1,9 @@
 syntax on
 filetype plugin indent on
 
+" Add syntax highlighting on dotfiles
+au BufReadPost .90poe set syntax=sh
+
 " Set 2 space indentation for JS files
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 softtabstop=0 expandtab
 
