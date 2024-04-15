@@ -15,3 +15,7 @@ set backspace=indent,eol,start
 
 " Set Ctrl-A to copy all lines to the clipboard
 :nnoremap <C-a> :%y+<CR>
+
+set ruler
+set showcmd
+set hlsearch
