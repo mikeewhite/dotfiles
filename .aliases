@@ -4,7 +4,8 @@ alias source_zshrc="source ~/.zshrc"
 ###############################################################
 # git
 ###############################################################
-alias git-clean="git branch | grep -v "master" | xargs git branch -D"
+# See https://github.com/seachicken/gh-poi
+alias git-clean="gh poi"
 
 ###############################################################
 # java
