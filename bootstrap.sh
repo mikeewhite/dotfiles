@@ -41,6 +41,9 @@ asdf plugin-add mongodb https://github.com/sylph01/asdf-mongodb.git
 echo -e "🛠️ ${GREEN} Installing asdf nodejs plugin (see https://github.com/asdf-vm/asdf-nodejs)${NC}"
 asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
 
+echo -e "🛠️ ${GREEN} Installing asdf buf plugin (see https://github.com/truepay/asdf-buf)${NC}"
+asdf plugin-add buf https://github.com/truepay/asdf-buf
+
 symlink_dotfile ".aliases"
 symlink_dotfile ".functions"
 symlink_dotfile ".mongorc.js"
