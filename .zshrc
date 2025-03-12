@@ -24,8 +24,7 @@ eval "$(op completion zsh)"; compdef _op op
 ###############################################################
 # asdf
 ###############################################################
-ASDF_SCRIPT_LOCATION="$(brew --prefix asdf)/libexec/asdf.sh"
-source ${ASDF_SCRIPT_LOCATION}
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
 ###############################################################
 # gcloud
@@ -54,4 +53,9 @@ export GOPRIVATE=buf.build/gen/go
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 POWERLVL10K_SCRIPT_LOCATION="$(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme"
 source ${POWERLVL10K_SCRIPT_LOCATION}
+
+##############################################################
+# python
+##############################################################
+eval "$(pyenv init --path)"
 
