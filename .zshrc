@@ -40,8 +40,8 @@ export EDITOR=vim
 ###############################################################
 # go
 ###############################################################
-export GOROOT="$HOME/.asdf/installs/golang/1.24.1/go"
-export GOPATH="$HOME/.asdf/installs/golang/1.24.1/packages"
+export GOROOT="$HOME/.asdf/installs/golang/1.24.2/go"
+export GOPATH="$HOME/.asdf/installs/golang/1.24.2/packages"
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$GOROOT
 export GOPRIVATE=buf.build/gen/go
