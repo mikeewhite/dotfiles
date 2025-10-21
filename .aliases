@@ -6,6 +6,7 @@ alias source_zshrc="source ~/.zshrc"
 ###############################################################
 # See https://github.com/seachicken/gh-poi
 alias git-clean="gh poi"
+alias refresh="git checkout master && git pull && git-clean"
 
 ###############################################################
 # java
