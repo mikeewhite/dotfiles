@@ -31,6 +31,13 @@ export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 ###############################################################
 export USE_GKE_GCLOUD_AUTH_PLUGIN=True
 
+
+###############################################################
+# granted.dev
+###############################################################
+export GRANTED_ALIAS_CONFIGURED="true"
+alias assume=". assume"
+
 ###############################################################
 # github
 ###############################################################
@@ -40,11 +47,13 @@ export EDITOR=vim
 ###############################################################
 # go
 ###############################################################
-export GOROOT="$HOME/.asdf/installs/golang/1.24.2/go"
-export GOPATH="$HOME/.asdf/installs/golang/1.24.2/packages"
-export PATH=$PATH:$GOPATH/bin
-export PATH=$PATH:$GOROOT
+. ${ASDF_DATA_DIR:-$HOME/.asdf}/plugins/golang/set-env.zsh
 export GOPRIVATE=buf.build/gen/go
+
+###############################################################
+# node
+###############################################################
+export PATH=$PATH:$(npm config get prefix)/bin
 
 ###############################################################
 # powerlevel10k
