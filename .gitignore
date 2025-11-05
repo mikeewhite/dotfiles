@@ -1,2 +1,6 @@
-# ignore swap files
+# Swap files
 *.swp
+
+# Editor/IDE
+.idea/
+.vscode/
