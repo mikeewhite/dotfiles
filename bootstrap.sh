@@ -88,3 +88,5 @@ brew install --cask rectangle
 echo -e "🛠️ ${GREEN} Installing OpenLens (see https://github.com/lensapp/lens)${NC}"
 brew install --cask openlens
 
+echo -e "🛠️ ${GREEN} Installing GitHub CLI (see https://cli.github.com/)${NC}"
+brew install gh
