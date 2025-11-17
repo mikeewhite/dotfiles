@@ -68,3 +68,4 @@ source ${POWERLVL10K_SCRIPT_LOCATION}
 ##############################################################
 eval "$(pyenv init --path)"
 
+export PATH="$HOME/.local/bin:$PATH"
