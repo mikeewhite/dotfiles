@@ -24,7 +24,7 @@ echo -e "🛠️ ${GREEN} Installing asdf version manager (see https://asdf-vm.c
 brew install asdf
 
 echo -e "🛠️ ${GREEN} Installing asdf go plugin (see https://github.com/kennyp/asdf-golang)${NC}"
-asdf plugin-add golang https://github.com/kennyp/asdf-golang.git
+asdf plugin-add golang asdf plugin add golang https://github.com/asdf-community/asdf-golang.git
 
 echo -e "🛠️ ${GREEN} Installing asdf golangci-lint plugin (see https://github.com/hypnoglow/asdf-golangci-lint)${NC}"
 asdf plugin add golangci-lint https://github.com/hypnoglow/asdf-golangci-lint.git
