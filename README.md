@@ -5,7 +5,6 @@ A collection of dotfiles and scripts for bootstrapping a MacOS development envir
 * [powerlevel10k](https://github.com/romkatv/powerlevel10k) - zsh theme
 * [asdf](https://asdf-vm.com/) - version manager
 * [VSCode](https://code.visualstudio.com/) - IDE
-* [Sourcetree](https://www.sourcetreeapp.com/) - Git GUI
 * [Rectangle](https://rectangleapp.com/) - Window manager
 * [OpenLens](https://github.com/lensapp/lens) - Kubernetes GUI
 

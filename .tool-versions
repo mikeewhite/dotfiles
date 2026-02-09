@@ -4,4 +4,3 @@ kubectl 1.28.2
 nodejs 22.15.1
 buf 1.44.0
 yarn 1.22.22
-java temurin-17.0.7+7
