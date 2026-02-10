@@ -1,4 +1,4 @@
-golang 1.25.3
+golang 1.25.6
 golangci-lint 1.60.3
 kubectl 1.28.2
 nodejs 22.15.1
