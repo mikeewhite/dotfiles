@@ -71,3 +71,6 @@ fi
 
 echo -e "🛠️ ${GREEN} Installing tooling via asdf (${FILE})${NC}"
 asdf install
+
+echo -e "🛠️ ${GREEN} Installing GitHub CLI extensions${NC}"
+gh extension install seachicken/gh-poi
