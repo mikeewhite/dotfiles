@@ -39,7 +39,7 @@ echo -e "🛠️ ${GREEN} Installing asdf yarn plugin (see https://github.com/tw
 asdf plugin add yarn
 
 echo -e "🛠️ ${GREEN} Installing asdf buf plugin (see https://github.com/truepay/asdf-buf)${NC}"
-asdf plugin-add buf https://github.com/truepay/asdf-buf
+asdf plugin add buf https://github.com/truepay/asdf-buf
 
 echo -e "🛠️ ${GREEN} Installing VSCode IDE (see https://code.visualstudio.com/)${NC}"
 brew install --cask visual-studio-code
