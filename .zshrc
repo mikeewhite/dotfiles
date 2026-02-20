@@ -6,7 +6,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 export ZSH="$HOME/.oh-my-zsh"
-
 ZSH_THEME="powerlevel10k/powerlevel10k"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
@@ -14,7 +13,7 @@ source $ZSH/oh-my-zsh.sh
 source ~/.aliases
 source ~/.functions
 source ~/.sensitive
-source ~/.90poe
+export PATH="$HOME/.local/bin:$PATH"
 
 ###############################################################
 # 1Password
@@ -25,18 +24,6 @@ eval "$(op completion zsh)"; compdef _op op
 # asdf
 ###############################################################
 export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
-
-###############################################################
-# gcloud
-###############################################################
-export USE_GKE_GCLOUD_AUTH_PLUGIN=True
-
-
-###############################################################
-# granted.dev
-###############################################################
-export GRANTED_ALIAS_CONFIGURED="true"
-alias assume=". assume"
 
 ###############################################################
 # github
@@ -50,22 +37,5 @@ export EDITOR=vim
 . ${ASDF_DATA_DIR:-$HOME/.asdf}/plugins/golang/set-env.zsh
 export GOPRIVATE=buf.build/gen/go
 
-###############################################################
-# node
-###############################################################
-export PATH=$PATH:$(npm config get prefix)/bin
-
-###############################################################
-# powerlevel10k
-###############################################################
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-POWERLVL10K_SCRIPT_LOCATION="$(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme"
-source ${POWERLVL10K_SCRIPT_LOCATION}
-
-##############################################################
-# python
-##############################################################
-eval "$(pyenv init --path)"
-
-export PATH="$HOME/.local/bin:$PATH"

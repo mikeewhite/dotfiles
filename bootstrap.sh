@@ -56,6 +56,9 @@ brew install --cask openlens
 echo -e "🛠️ ${GREEN} Installing GitHub CLI (see https://cli.github.com/)${NC}"
 brew install gh
 
+echo -e "🛠️ ${GREEN} Installing 1Password CLI (see https://developer.1password.com/docs/cli)${NC}"
+brew install 1password-cli
+
 symlink_dotfile ".aliases"
 symlink_dotfile ".functions"
 symlink_dotfile ".tool-versions"
